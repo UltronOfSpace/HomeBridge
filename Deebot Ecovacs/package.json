@@ -1,0 +1,61 @@
+{
+  "name": "homebridge-deebotecovacs",
+  "version": "1.4.8",
+  "author": "Nicolas Dujardin",
+  "description": "Publish your deebot ecovacs as an homekit accessory",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js && echo \"No syntax errors! (node $(node -v))\""
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoduj/homebridge-deebotecovacs.git"
+  },
+  "engines": {
+    "homebridge": ">=0.4.50",
+    "node": ">=10.20.0"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "deebot",
+    "sucks",
+    "ecovacs",
+    "vacuum",
+    "homekit"
+  ],
+  "dependencies": {
+    "ecovacs-deebot": ">=0.7.2",
+    "node-machine-id": "^1.1.12"
+  },
+  "bugs": {
+    "url": "https://github.com/nicoduj/homebridge-deebotecovacs/issues"
+  },
+  "homepage": "https://github.com/nicoduj/homebridge-deebotecovacs#readme",
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "prettier": "2.0.0",
+    "pretty-quick": "^2.0.2"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 100
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/nicoduj/"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.me/nicoduj/"
+    }
+  ]
+}
